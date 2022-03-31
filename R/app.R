@@ -46,6 +46,10 @@ run_DT <- function(limit = Inf, input = NULL){
             p[,j],
             p[,k]
           )
+          print("Triangle drawn between points:")
+          print(p[,i])
+          print(p[,j])
+          print(p[,k])
           triangles <- triangles + 1
         }
         k <- k+1

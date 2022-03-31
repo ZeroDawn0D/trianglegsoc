@@ -36,3 +36,16 @@ trianglegsoc::run_DT(input = matrix(c(1,2,3,9,0,5,6,9,4,3), ncol = 5, byrow = FA
 ```
 
 <img src="man/figures/README-plot-1.png" width="100%" />
+
+    #> [1] "Triangle drawn between points:"
+    #> [1] 1 2
+    #> [1] 0 5
+    #> [1] 4 3
+    #> [1] "Triangle drawn between points:"
+    #> [1] 3 9
+    #> [1] 0 5
+    #> [1] 4 3
+    #> [1] "Triangle drawn between points:"
+    #> [1] 3 9
+    #> [1] 6 9
+    #> [1] 4 3
