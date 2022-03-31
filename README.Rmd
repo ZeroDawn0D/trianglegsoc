@@ -35,7 +35,7 @@ The function to calculate a Standard Delaunay Triangulation:
 
 ``` r
 trianglegsoc::run_DT() 
-trianglegsoc::runDT(limit = 3) #stops execution after drawing 3 triangles
+trianglegsoc::run_DT(limit = 3) #stops execution after drawing 3 triangles
 ```
 
 Input can also be provided beforehand
