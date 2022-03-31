@@ -1,0 +1,29 @@
+---
+title: "delaunay"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{delaunay}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+# Discussion
+
+The problem asks to draw 3 triangles among 5 points. I assume the correct way to do it would be to calculate the Constrained Delauney Triangulation of the 5 points.
+
+A workaround I use is to limit the number of triangles to 3 like
+
+``` r
+trianglegsoc::run_DT(limit = 3)
+```
+
+However, this solution is only temporary, as some exceptions break it
+
+```{r break}
+trianglegsoc::run_DT(
+  limit = 3, 
+  input = matrix(c(5,6,8,2,9,1,7,9,2,4), ncol = 5, byrow = FALSE))
+
+```
+
+There are three triangles drawn, but point 3 has been completely skipped over
